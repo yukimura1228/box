@@ -43,4 +43,9 @@ localhostで確認出来る
 2. Functional Component ←こっちが有力
 - const hogehoge = (props) => {}
 
-■ 04. コンポーネント
+■ 04. コンポーネント（stateの設定と取得と変更）
+ローカルステート（≠Redux グローバルステート）
+render()内で値を直接変更してしまうと再レンダーのループが発生してしまう
+propsにstateを持たせて
+関数宣言を行い、子コンポーネントで値の変更関数実行をする
+関数もpropsに宣言して持たせることが出来るし、stateを変更出来る
